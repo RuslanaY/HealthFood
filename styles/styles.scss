@@ -1,3 +1,391 @@
-body{
-  
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body, html{
+  display: grid;
+  column-gap: 30px;
+  width: 1440px;
+  height: 100%;
+  margin: auto;
+  background: #fff;
+}
+header{
+  background: linear-gradient(to left, #fff6ea 0%, rgba(255, 255, 255, 255) 100%);
+  width: 1170px;
+  margin: 30px 135px;
+  .top-header{
+    display: flex;
+    justify-content: space-between;
+
+    a{
+      text-decoration: none;
+    }
+    .logo{
+      a{
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-size: 24px;
+        color: #fb9333;
+      }
+      span{
+        font-weight: 700;
+        color: #585858;
+      }
+    }
+    button{
+        border-radius: 100px;
+        width: 130px;
+        height: 54px;
+        background: #fb9333;
+      text-align: center;
+      border: none;
+      color: white;
+      transition: transform 0.5s ease;
+      margin-left: 244px;
+    }
+    button:hover{
+      background-color: chocolate;
+      transform: rotate(360deg);
+    }
+    .menu{
+      margin-top: 10px;
+      a{
+        margin-right: 57px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 130%;
+        color: #575757;
+      }
+      a:hover{
+        color: #fb9300;
+      }
+    }
+
+  }
+  .main-header{
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+    .best{
+      border-radius: 100px;
+      padding: 16px;
+      width: 213px;
+      height: 53px;
+      background: #fff0dc;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 130%;
+      color: #fb9333;
+    }
+    h1{
+      font-weight: 700;
+      font-size: 72px;
+      line-height: 130%;
+      letter-spacing: -0.02em;
+      color: #575757;
+      span{
+        color: #fb9333 ;
+      }
+      .p-best{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 160%;
+        letter-spacing: -0.02em;
+        color: #828282;
+      }
+
+    }
+    button{
+      border-radius: 100px;
+      width: 192px;
+      height: 68px;
+      background: #fb9333;
+      text-align: center;
+      border: none;
+      color: white;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 130%;
+      margin-bottom: 88px;
+    }
+    button:hover{
+      background-color: chocolate;
+    }
+    ul{
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+
+      li{
+        text-decoration: none;
+        margin-right: 52px;
+      }
+      .number1, .number2, .number3{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 160%;
+        color: #575757;
+        margin-bottom: 0;
+      }
+      .text1, .text2, .text3{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 160%;
+        color: #828282;
+        margin-top: 0;
+      }
+      .text1{
+        margin-left: 2px;
+      }
+      .text2{
+        margin-left: 3px;
+      }
+      .text3{
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+main {
+  width: 1170px;
+
+  .food-card {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      margin-top: 0;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 140%;
+      letter-spacing: -0.02em;
+      color: #585858;
+
+      span {
+        color: #fb9333;
+      }
+    }
+
+    p {
+      margin-top: 0;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 180%;
+      letter-spacing: -0.02em;
+      color: #828282;
+    }
+  }
+
+  .choosfood {
+    margin-left: 100px;
+    margin-top: 100px;
+
+    .card {
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 30px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 300px;
+      height: 406px;
+      margin-top: 64px;
+    }
+
+    .product-card:hover {
+      transform: scale(1.1);
+    }
+
+    .product-image {
+      width: 122px;
+      height: 122px;
+      margin-bottom: 60px;
+    }
+
+    .product-info {
+      padding: 20px;
+      margin-bottom: 0;
+    }
+
+    .product-title {
+      font-size: 24px;
+      font-weight: 600;
+      margin: 0;
+      color: #2b2b2b;
+
+    }
+
+    .product-description {
+      margin: 5px 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 180%;
+      color: #575757;
+    }
+
+    .product-price {
+      font-size: 1.2em;
+      color: #e67e22;
+      margin: 10px 0;
+    }
+
+    .product-button {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 180%;
+      letter-spacing: -0.02em;
+      color: #575757;
+      transition: background-color 0.3s;
+      margin-top: 24px;
+      border: none;
+      background-color: white;
+
+    }
+
+    .product-button:hover {
+      background-color: #e67e22;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 138px;
+    padding: 120px 135px;
+    width: 1440px;
+    height: 682px;
+    background: linear-gradient(180deg, #fff6ea 0%, rgba(255, 232, 199, 0.5) 100%);
+
+    .aboutus {
+      margin-right: 80px;
+      h2 {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 133%;
+        color: #333;
+
+
+        span {
+          color: #fb9333;
+        }
+      }
+
+      h3 {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 133%;
+        color: #333;
+
+        span {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 137%;
+          color: #ccc;
+        }
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #999;
+      }
+
+      .arrow-container {
+        display: flex;
+        gap: 20px;
+      }
+
+      .arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 56px;
+        height: 56px;
+        border-radius: 10px;
+        background: #ffc87a;
+        cursor: pointer;
+        transition: background 0.3s; /* Плавний перехід для зміни фону */
+      }
+
+      .arrow:hover {
+        background: #e0a65f; /* Колір фону при наведенні */
+      }
+
+      .arrow svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    .about-card-us {
+      display: flex;
+      width: 790px;
+      height: 442px;
+      margin-top: -50px;
+
+      .about-card{
+        margin-right: 10px;
+        background: white;
+        border-radius: 30px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 300px;
+        height: 406px;
+        margin-top: 64px;
+        .about-info{
+          padding: 20px;
+          margin-bottom: 0;
+          border-radius: 8px;
+          width: 269px;
+          height: 402px;
+          background: #fff;
+          span{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 150%;
+            color: #999;
+          }
+        }
+      }
+      .about-title {
+        margin-top: 30px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 133%;
+        color: #2b2b2b;
+
+      }
+
+      .about-description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: #575757;
+      }
+      }
+    }
+  }
+
+.owl-carousel{
+  display: flex;
+  justify-content: center;
+}
+
