@@ -8,16 +8,16 @@
 body, html{
   display: grid;
   column-gap: 30px;
-  width: 100%;
+ max-width: 1440px;
   height: 100%;
   margin: auto;
   background: #fff;
 }
 header{
   background: linear-gradient(to left, #fff6ea 0%, rgba(255, 255, 255, 255) 100%);
-  width: 1170px;
   margin: 30px 135px;
   .top-header{
+    width: 1170px;
     display: flex;
     justify-content: space-between;
 
@@ -154,8 +154,7 @@ header{
 }
 
 main {
-  width: 1170px;
-
+  width: 1440px;
   .food-card {
     display: flex;
     justify-content: space-between;
@@ -381,6 +380,50 @@ main {
       }
       }
     }
+  .best-menu{
+    display: inline-block;
+    padding: 100px 135px;
+    width: 1440px;
+.best-menu-title{
+  width: 1170px;
+  height: 182px;
+  h5{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fb9333;
+  }
+  h3{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #585858;
+    span{
+      color: #fb9333;
+    }
+  }
+  .menu-card{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    .menu-card-article{
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+      width: 200px;
+      .menu_item {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+  }
   }
 
 .owl-carousel{
@@ -388,3 +431,33 @@ main {
   justify-content: center;
 }
 
+/*.email-subscription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.email-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  width: 250px;
+}
+
+.subscribe-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+}
+
+.subscribe-button:hover {
+  background-color: #0056b3;
+}
+*/
